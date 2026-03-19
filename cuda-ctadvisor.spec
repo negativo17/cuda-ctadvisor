@@ -4,11 +4,11 @@
 %global __strip /bin/true
 %global _missing_build_ids_terminate_build 0
 %global _build_id_links none
-%global major_package_version 13-0
+%global major_package_version 13-1
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        13.1.115
+Version:        13.2.51
 Release:        1%{?dist}
 Summary:        CUDA ctadvisor
 License:        CUDA Toolkit
@@ -41,6 +41,9 @@ install -p -m 0755 -D bin/ctadvisor %{buildroot}%{_bindir}/ctadvisor
 %{_bindir}/ctadvisor
 
 %changelog
+* Thu Mar 19 2026 Simone Caronni <negativo17@gmail.com> - 1:13.2.51-1
+- Update to 13.2.51.
+
 * Mon Feb 02 2026 Simone Caronni <negativo17@gmail.com> - 1:13.1.115-1
 - Update to 13.1.115.
 
